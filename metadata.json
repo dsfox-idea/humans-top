@@ -41,6 +41,9 @@
     "birth_month",
     "birth_day",
     "sex",
+    "viaf_id",
+    "isni",
+    "freebase_id",
     "bio_en",
     "bio_ru",
     "bio_de",
@@ -58,5 +61,5 @@
     "bio_ja"
   ],
   "row_count": 211,
-  "generated_at": "2026-06-23T18:04:40Z"
+  "generated_at": "2026-06-23T20:37:49Z"
 }
