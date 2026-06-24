@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it using the metadata below."
+title: "humans.top — global humans influence ranking (open dataset)"
+abstract: >-
+  An open, continuously updated ranking of notable living people, ordered by a
+  fixed composite of political, financial, informational and cultural influence
+  computed from public statistical sources. Each entry has a concise descriptor
+  in 15 languages, Wikidata / VIAF / ISNI identifiers, an influence tier, the
+  live rank, demographics, and a canonical profile URL.
+type: dataset
+authors:
+  - name: "humans.top"
+    website: "https://humans.top"
+url: "https://humans.top/dataset"
+repository: "https://github.com/dsfox-idea/humans-top"
+license: CC0-1.0
+doi: 10.5281/zenodo.20809207
+keywords:
+  - influential people
+  - people ranking
+  - influence
+  - notable people
+  - multilingual
+  - entity linking
+  - wikidata
+  - knowledge base
