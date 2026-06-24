@@ -1,6 +1,6 @@
 ---
 license: cc0-1.0
-pretty_name: "humans.top — global humans influence ranking"
+pretty_name: "humans.top — Global ranking of influential people"
 language:
   - en
   - ru
@@ -45,7 +45,7 @@ tags:
   - knowledge-base
 ---
 
-# humans.top — global humans influence ranking (open dataset)
+# humans.top — Global ranking of influential people (open dataset)
 
 An open, continuously updated ranking of notable living people, ordered by a
 fixed composite of **political, financial, informational and cultural
@@ -137,7 +137,7 @@ Cite via the DOI [10.5281/zenodo.20809207](https://doi.org/10.5281/zenodo.208092
 
 ```bibtex
 @misc{humanstop,
-  title  = {humans.top — global humans influence ranking (open dataset)},
+  title  = {humans.top — Global ranking of influential people (open dataset)},
   author = {{humans.top}},
   year   = {2026},
   doi    = {10.5281/zenodo.20809207},
