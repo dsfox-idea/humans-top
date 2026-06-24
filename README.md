@@ -110,6 +110,18 @@ rows = [json.loads(l) for l in
         urllib.request.urlopen("https://humans.top/dataset/humans.jsonl").read().decode().splitlines()]
 ```
 
+```sql
+-- DuckDB: query the Hub's auto-converted Parquet directly, no download
+INSTALL httpfs; LOAD httpfs;
+SELECT rank, name, tier, wikidata_qid
+FROM 'hf://datasets/dsfox/humans-top@~parquet/default/train/*.parquet'
+ORDER BY rank
+LIMIT 10;
+```
+
+Or **browse & SQL it online** (no setup): the [Datasette
+browser](https://huggingface.co/spaces/dsfox/humans-top-datasette).
+
 ## How it's built
 
 The ranking is generated from public statistical sources by a fixed formula and
