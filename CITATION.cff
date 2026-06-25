@@ -9,7 +9,9 @@ abstract: >-
   live rank, demographics, and a canonical profile URL.
 type: dataset
 authors:
-  - name: "humans.top"
+  - family-names: Golubnichiy
+    given-names: Dmitry
+    orcid: "https://orcid.org/0009-0007-3307-2202"
     website: "https://humans.top"
 url: "https://humans.top/dataset"
 repository: "https://github.com/dsfox-idea/humans-top"

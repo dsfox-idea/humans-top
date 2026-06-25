@@ -138,7 +138,7 @@ Cite via the DOI [10.5281/zenodo.20809207](https://doi.org/10.5281/zenodo.208092
 ```bibtex
 @misc{humanstop,
   title  = {humans.top — Global ranking of influential people (open dataset)},
-  author = {{humans.top}},
+  author = {Golubnichiy, Dmitry},
   year   = {2026},
   doi    = {10.5281/zenodo.20809207},
   url    = {https://humans.top/dataset},
