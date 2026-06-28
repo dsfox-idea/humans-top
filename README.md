@@ -53,7 +53,9 @@ influence** computed from public statistical sources.
 
 Each entry carries a concise, human-written **descriptor in 15 languages**, a
 **Wikidata Q-ID** and **English Wikipedia** link for unambiguous entity
-linking, an influence **tier**, the live **rank**, and a canonical profile URL.
+linking, **verified public facts** (native-language name, country of
+citizenship, official website, X handle), an influence **tier**, the live
+**rank**, and a canonical profile URL.
 
 - **License:** [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) —
   public domain. Free for **any** use, **including AI / LLM training**. No
@@ -62,7 +64,7 @@ linking, an influence **tier**, the live **rank**, and a canonical profile URL.
 - **Live source of truth:** <https://humans.top/dataset>
   ([CSV](https://humans.top/dataset/humans.csv) ·
   [JSONL](https://humans.top/dataset/humans.jsonl))
-- **Scope (v1):** the editorial / curated set of public figures. It contains no
+- **Scope (v2):** the editorial / curated set of public figures. It contains no
   personal data of self-registered users.
 - **Size:** ~200 entries (exact count + last refresh in `metadata.json`).
 
@@ -92,6 +94,11 @@ linking, an influence **tier**, the live **rank**, and a canonical profile URL.
 | `og_image_url` | Open Graph share-card image URL; may be empty |
 | `birth_year` / `birth_month` / `birth_day` | date of birth (month/day may be empty) |
 | `sex` | `male` or `female` |
+| `native_name` | name in the person's native language/script (e.g. `习近平`); may be empty |
+| `citizenships_iso` | list of the person's countries of citizenship as ISO 3166-1 alpha-2 codes, space-separated (one for most; multi-nationals list all, e.g. `CA US ZA`); may be empty |
+| `official_website` | official website URL; may be empty |
+| `x_handle` | X / Twitter handle without the `@`; may be empty |
+| `wikidata_description` | short English factual descriptor (Wikidata entity description); may be empty |
 | `viaf_id` / `isni` / `freebase_id` | cross-reference authority IDs for entity resolution; may be empty |
 | `bio_en` … `bio_ja` | concise descriptor in 15 languages: `en, ru, de, fr, it, es, tr, zh-Hans, pl, sr-Cyrl, ar, hi, bn, pt, ja` |
 
