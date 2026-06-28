@@ -66,5 +66,16 @@
     "bio_ja"
   ],
   "row_count": 215,
-  "generated_at": "2026-06-28T19:16:49Z"
+  "generated_at": "2026-06-28T20:27:09Z",
+  "rank_history": {
+    "file": "humans-rank-history.csv",
+    "columns": [
+      "date",
+      "user_number",
+      "rank"
+    ],
+    "start_date": "2026-06-25",
+    "joins_on": "user_number",
+    "description": "Daily rank history; join to the ranking by user_number."
+  }
 }

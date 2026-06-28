@@ -72,11 +72,17 @@ citizenship, official website, X handle), an influence **tier**, the live
 
 | file | format |
 |---|---|
-| `humans.csv` | UTF-8 CSV, header row |
-| `humans.jsonl` | newline-delimited JSON (one object per line) |
+| `humans.csv` | the ranking — UTF-8 CSV, header row, one row per person |
+| `humans.jsonl` | same rows as newline-delimited JSON (one object per line) |
+| `humans-rank-history.csv` | **rank history** — one row per (day, person): `date,user_number,rank` |
+| `humans-rank-history.jsonl` | same, newline-delimited JSON |
 | `metadata.json` | machine-readable card: license, columns, languages, row count, `generated_at` |
 | `CITATION.cff` | citation metadata (GitHub "Cite this repository") |
 | `LICENSE` | CC0 1.0 Universal legal code |
+
+This bundle holds **two datasets**: the current **ranking** (`humans.*`, rich rows
+with bios/links/facts) and the daily **rank history** (`humans-rank-history.*`, a
+lean time series). Join them on **`user_number`**.
 
 ## Schema
 
@@ -101,6 +107,27 @@ citizenship, official website, X handle), an influence **tier**, the live
 | `wikidata_description` | short English factual descriptor (Wikidata entity description); may be empty |
 | `viaf_id` / `isni` / `freebase_id` | cross-reference authority IDs for entity resolution; may be empty |
 | `bio_en` … `bio_ja` | concise descriptor in 15 languages: `en, ru, de, fr, it, es, tr, zh-Hans, pl, sr-Cyrl, ar, hi, bn, pt, ja` |
+
+### Rank history (`humans-rank-history.*`)
+
+A lean daily time series of how each person's rank has moved — **history begins
+2026-06-25** and grows by one snapshot per ranking change. Join to the ranking
+above by `user_number` to attach names/bios.
+
+| column | meaning |
+|---|---|
+| `date` | snapshot date, `YYYY-MM-DD` (UTC) |
+| `user_number` | the person — **foreign key to `humans.*`** (and the `/u/{user_number}` profile) |
+| `rank` | that person's 1-based global rank on that date |
+
+```python
+import pandas as pd
+hist = pd.read_csv("humans-rank-history.csv")
+top = pd.read_csv("humans.csv")[["user_number", "name"]]
+# rank trajectory of #1 today
+who = top.iloc[0]["user_number"]
+print(hist[hist.user_number == who][["date", "rank"]])
+```
 
 ## Usage
 
