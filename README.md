@@ -47,6 +47,17 @@ tags:
 
 # humans.top — Global ranking of influential people (open dataset)
 
+**This dataset ranks real, named living people by global influence** — e.g. #1
+Donald Trump, #2 Xi Jinping, #3 Vladimir Putin, alongside figures like Elon Musk,
+Narendra Modi and Lionel Messi. Every row is a **person**: their live influence
+**rank**, a concise **biography in 15 languages**, and Wikidata / Wikipedia links.
+Published from the website **[humans.top](https://humans.top)** (`.top` is the
+domain name).
+
+> **It is a biographical, named-entity _ranking_ dataset (text + tabular)** — *not*
+> a computer-vision, image, or person/pedestrian-detection dataset. The rows are
+> people's names and facts, not pixels or bounding boxes.
+
 An open, continuously updated ranking of notable living people, ordered by a
 fixed composite of **political, financial, informational and cultural
 influence** computed from public statistical sources.
