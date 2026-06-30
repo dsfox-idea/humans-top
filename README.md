@@ -47,6 +47,12 @@ tags:
 
 # humans.top — Global ranking of influential people (open dataset)
 
+![Live](https://img.shields.io/badge/Live-mirrors%20the%20ranking-2ea44f)
+![Lightweight](https://img.shields.io/badge/Lightweight-CSV%20%2F%20JSONL-1f6feb)
+![High-quality](https://img.shields.io/badge/High--quality-15--language%20bios-8957e5)
+![Frequently updated](https://img.shields.io/badge/Updated-daily-2ea44f)
+![Human-checked](https://img.shields.io/badge/Human--checked-links%20%26%20accounts-d29922)
+
 **This dataset ranks real, named living people by global influence** — e.g. #1
 Donald Trump, #2 Xi Jinping, #3 Vladimir Putin, alongside figures like Elon Musk,
 Narendra Modi and Lionel Messi. Every row is a **person**: their live influence
@@ -78,6 +84,23 @@ citizenship, official website, X handle), an influence **tier**, the live
 - **Scope (v2):** the editorial / curated set of public figures. It contains no
   personal data of self-registered users.
 - **Size:** ~200 entries (exact count + last refresh in `metadata.json`).
+
+## Data quality & verification
+
+The data is checked **both automatically and by hand**. Public sources such as
+Wikidata are sometimes out of date — for example a stored "official website" that
+has lapsed or now redirects elsewhere — so the linkage fields (**official
+website**, **X / Twitter account**) are verified by a person and corrected or
+removed. We prefer an **empty field over a wrong link**. This human pass is
+repeated periodically, on top of the automated daily refresh.
+
+| badge | what it means |
+|---|---|
+| **Live** | mirrors the current live ranking |
+| **Lightweight** | tiny CSV / JSONL — loads in seconds |
+| **High-quality** | curated, human-written bios in 15 languages |
+| **Frequently updated** | auto-refreshed daily across every mirror |
+| **Human-checked** | links & accounts reviewed by a person, not just scraped |
 
 ## Files
 
