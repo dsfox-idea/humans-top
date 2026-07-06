@@ -60,6 +60,13 @@ Narendra Modi and Lionel Messi. Every row is a **person**: their live influence
 Published from the website **[humans.top](https://humans.top)** (`.top` is the
 domain name).
 
+**Available on** (identical CC0 mirrors): [humans.top/dataset](https://humans.top/dataset) ·
+[GitHub](https://github.com/dsfox-idea/humans-top) ·
+[Hugging Face](https://huggingface.co/datasets/dsfox/humans-top) ·
+[Kaggle](https://www.kaggle.com/datasets/dsfoxx/humans-top) ·
+[Zenodo (DOI)](https://doi.org/10.5281/zenodo.20809207) ·
+[Internet Archive](https://archive.org/details/humans-top-open-dataset).
+
 > **It is a biographical, named-entity _ranking_ dataset (text + tabular)** — *not*
 > a computer-vision, image, or person/pedestrian-detection dataset. The rows are
 > people's names and facts, not pixels or bounding boxes.
