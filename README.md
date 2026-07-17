@@ -1,6 +1,6 @@
 ---
 license: cc0-1.0
-pretty_name: "humans.top — Global ranking of influential people"
+pretty_name: "humans.top — LIVE Global ranking of influential people"
 language:
   - en
   - ru
@@ -45,7 +45,7 @@ tags:
   - knowledge-base
 ---
 
-# humans.top — Global ranking of influential people (open dataset)
+# humans.top — LIVE Global ranking of influential people (open dataset)
 
 ![Live](https://img.shields.io/badge/Live-mirrors%20the%20ranking-2ea44f)
 ![Lightweight](https://img.shields.io/badge/Lightweight-CSV%20%2F%20JSONL-1f6feb)
@@ -212,7 +212,7 @@ Cite via the DOI [10.5281/zenodo.20809207](https://doi.org/10.5281/zenodo.208092
 
 ```bibtex
 @misc{humanstop,
-  title  = {humans.top — Global ranking of influential people (open dataset)},
+  title  = {humans.top — LIVE Global ranking of influential people (open dataset)},
   author = {Golubnichiy, Dmitry},
   year   = {2026},
   doi    = {10.5281/zenodo.20809207},
