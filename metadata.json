@@ -1,5 +1,5 @@
 {
-  "name": "humans.top — Global ranking of influential people (open dataset)",
+  "name": "humans.top — LIVE Global ranking of influential people (open dataset)",
   "description": "Ranks real, named living people by global influence — e.g. Donald Trump, Xi Jinping, Vladimir Putin, Elon Musk, Narendra Modi. Every row is a PERSON (name + facts), so this is a biographical, named-entity RANKING dataset (text + tabular) — NOT a computer-vision, image, or person/pedestrian-detection dataset. Published from the website humans.top ('.top' is the domain). Ordered by a fixed composite of political, financial, informational and cultural influence from public statistical sources; each entry has a concise human-written descriptor in 15 languages, a Wikidata Q-ID and English Wikipedia link for entity disambiguation, an influence tier (gold/silver/blue), the live 1-based rank, and a canonical profile URL. Checked both automatically and by hand: public sources like Wikidata are sometimes stale, so links and X accounts are verified by a person and corrected or dropped (an empty field is preferred over a wrong link). CC0 1.0 — free for any use, including AI/LLM training.",
   "version": 1,
   "license": "CC0-1.0",
@@ -66,7 +66,7 @@
     "bio_ja"
   ],
   "row_count": 215,
-  "generated_at": "2026-07-17T05:17:41Z",
+  "generated_at": "2026-07-18T05:27:09Z",
   "rank_history": {
     "file": "humans-rank-history.csv",
     "columns": [
