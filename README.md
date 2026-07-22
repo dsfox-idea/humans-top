@@ -71,9 +71,11 @@ domain name).
 > a computer-vision, image, or person/pedestrian-detection dataset. The rows are
 > people's names and facts, not pixels or bounding boxes.
 
-An open, continuously updated ranking of notable living people, ordered by a
-fixed composite of **political, financial, informational and cultural
-influence** computed from public statistical sources.
+An open ranking of notable living people, scored from public statistical sources.
+Its defining trait is that it is **live**: not a one-off "top-N" snapshot but a
+ranking that is recomputed and **re-published across every mirror daily**, shipped
+with a per-day **rank-history** time series — so change over time is part of the
+data itself, not a frozen list you have to re-scrape.
 
 Each entry carries a concise, human-written **descriptor in 15 languages**, a
 **Wikidata Q-ID** and **English Wikipedia** link for unambiguous entity
@@ -82,9 +84,8 @@ citizenship, official website, X handle), an influence **tier**, the live
 **rank**, and a canonical profile URL.
 
 - **License:** [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) —
-  public domain. Free for **any** use, **including AI / LLM training**. No
-  attribution required (a link back to [humans.top](https://humans.top) is
-  always welcome).
+  public domain. Free for **any** use, no attribution required (a link back to
+  [humans.top](https://humans.top) is always welcome).
 - **Live source of truth:** <https://humans.top/dataset>
   ([CSV](https://humans.top/dataset/humans.csv) ·
   [JSONL](https://humans.top/dataset/humans.jsonl))
